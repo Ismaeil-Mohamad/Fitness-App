@@ -42,13 +42,13 @@ public class Main {
         DecimalFormat formatType = new DecimalFormat("#.##");
 
         if (loadedUser != null) {
-            System.out.println("First Name: " + loadedUser.getName());
-            System.out.println("Last Name: " + loadedUser.getsurName());
-            System.out.println("Age: " + loadedUser.getAge());
-            System.out.println("Weight: " + loadedUser.getWeight());
-            System.out.println("Height: " + loadedUser.getHeight());
-            System.out.println("BMI: " + formatType.format(loadedUser.calculateBMI()));
-            System.out.println("VO2 Max: " + formatType.format(loadedUser.calculateVO2Max()));
+            System.out.println(languageManager.getPrompt("lang_name") + loadedUser.getName());
+            System.out.println(languageManager.getPrompt("lang_last_name")+ loadedUser.getsurName());
+            System.out.println(languageManager.getPrompt("lang_age")+ loadedUser.getAge());
+            System.out.println(languageManager.getPrompt("lang_weight")+ loadedUser.getWeight());
+            System.out.println(languageManager.getPrompt("lang_height") + loadedUser.getHeight());
+            System.out.println(languageManager.getPrompt("lang_bmi") + formatType.format(loadedUser.calculateBMI()));
+            System.out.println(languageManager.getPrompt("lang_vo2max") + formatType.format(loadedUser.calculateVO2Max()));
         } else {
             System.out.println("No user data found. Please enter new user information.");
         }

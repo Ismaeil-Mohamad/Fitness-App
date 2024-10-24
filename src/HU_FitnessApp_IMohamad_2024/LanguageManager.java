@@ -274,6 +274,31 @@ public class LanguageManager {
         promptsEN.put("barbells", "Barbells");
         promptsTR.put("barbells", "Halterler");
 
+        promptsEN.put("lang_name", "Name: ");
+        promptsEN.put("lang_age", "Age: ");
+        promptsEN.put("lang_weight", "Weight: ");
+        promptsEN.put("lang_height", "Height: ");
+        promptsEN.put("lang_bmi", "BMI: ");
+        promptsEN.put("lang_vo2max", "VO2 Max: ");
+        promptsEN.put("lang_last_name", "Last Name: ");
+
+        promptsNL.put("lang_name", "Naam: ");
+        promptsNL.put("lang_age", "Leeftijd: ");
+        promptsNL.put("lang_weight", "Gewicht: ");
+        promptsNL.put("lang_height", "Lengte: ");
+        promptsNL.put("lang_bmi", "BMI: ");
+        promptsNL.put("lang_vo2max", "VO2 Max: ");
+        promptsNL.put("lang_last_name", "Achternaam: ");
+
+        promptsTR.put("lang_name", "İsim: ");
+        promptsTR.put("lang_age", "Yaş: ");
+        promptsTR.put("lang_weight", "Ağırlık: ");
+        promptsTR.put("lang_height", "Boy: ");
+        promptsTR.put("lang_bmi", "BMI: ");
+        promptsTR.put("lang_vo2max", "VO2 Max: ");
+        promptsTR.put("lang_last_name", "Soyisim: ");
+
+
 
 
 
