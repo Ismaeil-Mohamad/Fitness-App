@@ -17,8 +17,12 @@ public class Cycling extends Activities {
         System.out.println("   *********");
         System.out.printf("%-20s: %.1f min%n", languageManager.getPrompt("Duration"), duration);
         System.out.printf("%-20s: %.1f km%n", languageManager.getPrompt("Distance"), distance);
-        float speed = distance / (duration / 60);
-        System.out.printf("%-20s: %.2f km/h%n", languageManager.getPrompt("cyclingSpeed"), speed);
+        if (duration > 0) {
+            float speed = distance / (duration / 60);
+            System.out.printf("%-20s: %.2f km/h%n", getLanguageManager().getPrompt("cyclingSpeed"), speed);
+        } else {
+            System.out.println("Duration must be greater than zero.");
+        }
     }
 
 }

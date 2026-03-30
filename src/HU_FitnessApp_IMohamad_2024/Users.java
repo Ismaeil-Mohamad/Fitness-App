@@ -161,7 +161,7 @@ public void displayBMIResult(double bmi) {
                 "\nName='" + name + '\'' +
                 "\nSurName='" + surName + '\'' +
                 "\nAge=" + age +
-                "\nWeight=" + formatType.format(weight) +
+                "\n" + languageManager.getPrompt("lang_weight") + formatType.format(weight) +
                 "\nHeight=" + formatType.format(height) +
                 "\nVo2Max=" + formatType.format(vo2Max) +
                 "\nBmi=" + formatType.format(bmi) +

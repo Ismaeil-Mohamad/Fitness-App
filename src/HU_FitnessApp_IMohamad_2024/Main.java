@@ -124,8 +124,8 @@ public class Main {
                 input.nextLine();
 
                 Users users = new Users(name, surName, age, weight, height, languageManager);
-                System.out.println("BMI :  " + formatType.format(users.calculateBMI()));
-                System.out.println("VO2Max : " + formatType.format(users.calculateVO2Max()));
+                System.out.println(languageManager.getPrompt("lang_bmi") + formatType.format(users.calculateBMI()));
+                System.out.println(languageManager.getPrompt("lang_vo2max") + formatType.format(users.calculateVO2Max()));
                  users.showHistory();
 
                 userDataStorage.saveUserData(users);
@@ -187,7 +187,7 @@ public class Main {
                         System.out.print(languageManager.getPrompt("enterDuration"));
                         duration = input.nextFloat();
                         input.nextLine();
-                        activity = new Running(languageManager.getPrompt("running"), languageManager.getPrompt("morning_run"), LocalDateTime.now(), duration, 0, distance,  languageManager.getPrompt("no_equipment"), 0, languageManager);
+                        activity = new Running(languageManager.getPrompt("running"), languageManager.getPrompt("morning_run"), LocalDateTime.now(), duration, 0 , distance,  languageManager.getPrompt("no_equipment"), 0, languageManager);
 
                         break;
                     case 3:

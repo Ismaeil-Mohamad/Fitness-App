@@ -90,8 +90,40 @@ public class LanguageManager {
         promptsEN.put("repeatIs", "The repeat is:");
         promptsEN.put("totalWorkload", "The total workload is:");
         promptsEN.put("TotalSwimmingDistance", "Total swimming distance:");
+        promptsEN.put("weight_history", "Weight history: ");
+        promptsEN.put("bmi_history", "BMI history: ");
+        promptsEN.put("vo2_max_history", "VO2 max history: ");
+        promptsEN.put("your_history", "Your history: ");
+        promptsEN.put("no_equipment", "No equipment needed.");
+
+
+
 
         // Dutch prompts
+        promptsNL.put("lang_name", "naam:");
+        promptsNL.put("lang_last_name", "Achternaam:");
+        promptsNL.put("lang_age", "Leeftijd:");
+        promptsNL.put("lang_weight", "gewicht:");
+        promptsNL.put("lang_height", "Lengte:");
+        promptsNL.put("lang_bmi", "Bmi :");
+        promptsNL.put("lang_vo2max", "VO2 Max  :");
+        promptsTR.put("lang_name", "İsim:");
+        promptsTR.put("lang_last_name", "Soyadı:");
+        promptsTR.put("lang_age", "Yaş:");
+        promptsTR.put("lang_weight", "Ağırlık:");
+        promptsTR.put("lang_height", "Boy:");
+        promptsTR.put("lang_bmi", "BMI:");
+        promptsTR.put("lang_vo2max", "VO2 Maks:");
+
+        promptsEN.put("lang_name", "Name:");
+        promptsEN.put("lang_last_name", "Last Name:");
+        promptsEN.put("lang_age", "Age:");
+        promptsEN.put("lang_weight", "Weight:");
+        promptsEN.put("lang_height", "Height:");
+        promptsEN.put("lang_bmi", "BMI:");
+        promptsEN.put("lang_vo2max", "VO2 Max:");
+        promptsEN.put("cycling_desc", "Outdoor cycling on a road path.");
+        promptsEN.put("cycling_device", "Road Bike / City Bike");
         promptsNL.put("name", "Voer uw naam in:");
         promptsNL.put("surname", "Voer uw achternaam in:");
         promptsNL.put("message", "Ongeldige invoer. Voer alleen letters in.");
@@ -107,14 +139,14 @@ public class LanguageManager {
         promptsNL.put("Obesity3", "Obesitas (klasse 3). Raadpleeg een arts.");
         promptsNL.put("extremeObesity", "Extreem overgewicht");
         promptsNL.put("InvalidBMI", "Ongeldige BMI-waarde.");
-        promptsNL.put("activity", "Activiteit:");
-        promptsNL.put("description", "Beschrijving:");
-        promptsNL.put("dateTime", "Datum en Tijd:");
+        promptsNL.put("activity", "Activiteit ");
+        promptsNL.put("description", "Beschrijving ");
+        promptsNL.put("dateTime", "Datum en Tijd ");
         promptsNL.put("duration", "Duur:");
-        promptsNL.put("repetitions", "Herhalingen:");
-        promptsNL.put("distance", "Afstand:");
-        promptsNL.put("device", "Apparaat:");
-        promptsNL.put("weight1", "Gewicht:");
+        promptsNL.put("repetitions", "Herhalingen ");
+        promptsNL.put("distance", "Afstand ");
+        promptsNL.put("device", "Apparaat ");
+        promptsNL.put("weight1", "Gewicht ");
         promptsNL.put("dataSaveSuccess", "Gebruikersgegevens succesvol opgeslagen.");
         promptsNL.put("dataSaveError", "Fout bij het opslaan van gebruikersgegevens:");
         promptsNL.put("dataLoadSuccess", "Gebruikersgegevens succesvol geladen.");
@@ -138,35 +170,45 @@ public class LanguageManager {
         promptsNL.put("enterRepeats", "Voer het aantal herhalingen in:");
         promptsNL.put("enterPoolLength", "Voer de zwembadlengte in meters in:");
         promptsNL.put("invalidChoice", "Ongeldige keuze voor activiteit");
-        promptsNL.put("continuePrompt", "Wil je doorgaan? (ja/nee):");
+        promptsNL.put("continuePrompt", "Wilt u doorgaan? (ja/nee):");
+        promptsNL.put("cycling_desc", "Buiten fietsen op een wegparcours.");
+        promptsNL.put("cycling_device", "Racefiets / Stadsfiets");
         promptsNL.put("yes", "ja");
         promptsNL.put("no", "nee");
         promptsNL.put("invalidInput", "Ongeldige invoer. Voer 'ja' of 'nee' in.");
-        promptsNL.put("invalidNumber", "Ongeldige invoer. Voer een geldig nummer in.");
+        promptsNL.put("invalidNumber", "Ongeldige invoer. Voer een geldig getal in.");
         promptsNL.put("closing", "Afsluiten...");
-        promptsNL.put("repeatZero", "Herhaling kan niet nul zijn.");
+        promptsNL.put("repeatZero", "Herhaal kan niet nul zijn.");
         promptsNL.put("weightIs", "Het gewicht is:");
         promptsNL.put("repeatIs", "De herhaling is:");
-        promptsNL.put("totalWorkload", "De totale werkbelasting is:");
+        promptsNL.put("totalWorkload", "De totale belasting is:");
         promptsNL.put("TotalSwimmingDistance", "Totale zwemafstand:");
 
+        promptsNL.put("weight_history", "Gewichtsgeschiedenis: ");
+        promptsNL.put("bmi_history", "BMI-geschiedenis: ");
+        promptsNL.put("vo2_max_history", "VO2 max-geschiedenis: ");
+        promptsNL.put("your_history", "Jouw geschiedenis: ");
+        promptsNL.put("no_equipment", "Geen apparatuur nodig.");
+
+
+
         // Turkish prompts
-        promptsTR.put("name", "Adınızı girin:");
-        promptsTR.put("surname", "Soyadınızı girin:");
+        promptsTR.put("name", "Adınızı girin: ");
+        promptsTR.put("surname", "Soyadınızı girin: ");
         promptsTR.put("message", "Geçersiz giriş. Lütfen sadece harf girin.");
-        promptsTR.put("age", "Yaşınızı girin:");
+        promptsTR.put("age", "Yaşınızı girin: ");
         promptsTR.put("numMessage", "Geçersiz giriş. Lütfen sadece rakam girin.");
-        promptsTR.put("weight", "Kilonuzu kilogram cinsinden girin:");
-        promptsTR.put("height", "Boyunuzu santimetre cinsinden girin:");
+        promptsTR.put("weight", "Kilonuzu kg cinsinden girin: ");
+        promptsTR.put("height", "Boyunuzu cm cinsinden girin: ");
         promptsTR.put("underweight", "Zayıf:");
-        promptsTR.put("normalWeight", "Normal kilo. İyi iş!");
-        promptsTR.put("Overweight", "Fazla kilolu. Daha sağlıklı bir yaşam düşünün.");
-        promptsTR.put("Obesity1", "Obezite (Sınıf 1). Tavsiye alın.");
-        promptsTR.put("Obesity2", "Obezite (Sınıf 2). Harekete geçmek önemlidir.");
+        promptsTR.put("normalWeight", "Normal kiloda. İyi iş!");
+        promptsTR.put("Overweight", "Kilolu. Daha sağlıklı bir yaşam tarzı düşünün.");
+        promptsTR.put("Obesity1", "Obezite (Sınıf 1). Danışmanlık alın.");
+        promptsTR.put("Obesity2", "Obezite (Sınıf 2). Hareket etmenin önemli.");
         promptsTR.put("Obesity3", "Obezite (Sınıf 3). Lütfen bir doktora danışın.");
         promptsTR.put("extremeObesity", "Aşırı obezite");
         promptsTR.put("InvalidBMI", "Geçersiz BMI değeri.");
-        promptsTR.put("activity", "Etkinlik:");
+        promptsTR.put("activity", "Aktivite:");
         promptsTR.put("description", "Açıklama:");
         promptsTR.put("dateTime", "Tarih ve Saat:");
         promptsTR.put("duration", "Süre:");
@@ -175,39 +217,60 @@ public class LanguageManager {
         promptsTR.put("device", "Cihaz:");
         promptsTR.put("weight1", "Ağırlık:");
         promptsTR.put("dataSaveSuccess", "Kullanıcı verileri başarıyla kaydedildi.");
-        promptsTR.put("dataSaveError", "Kullanıcı verileri kaydedilirken hata oluştu:");
+        promptsTR.put("dataSaveError", "Kullanıcı verileri kaydedilirken hata:");
         promptsTR.put("dataLoadSuccess", "Kullanıcı verileri başarıyla yüklendi.");
-        promptsTR.put("dataLoadError", "Kullanıcı verileri yüklenirken hata oluştu:");
+        promptsTR.put("dataLoadError", "Kullanıcı verileri yüklenirken hata:");
         promptsTR.put("enterCoachName", "Koçun adını girin:");
         promptsTR.put("enterCoachSurname", "Koçun soyadını girin:");
         promptsTR.put("selectedCoach", "Seçilen koçun adı:");
         promptsTR.put("ChooseACoach", "Bir Koç Seçin:");
-        promptsTR.put("chooseActivity", "Bir etkinlik seçin:");
-        promptsTR.put("cycling", "Bisiklet:");
-        promptsTR.put("running", "Koşu:");
-        promptsTR.put("strengthTraining", "Ağırlık antrenmanı:");
-        promptsTR.put("swimming", "Yüzme:");
-        promptsTR.put("enterDistance", "Mesafeyi kilometre cinsinden girin:");
-        promptsTR.put("enterDuration", "Süreyi dakika cinsinden girin:");
+        promptsTR.put("chooseActivity", "Bir aktivite seçin:");
+        promptsTR.put("cycling", "Bisiklet sürme");
+        promptsTR.put("running", "Koşu");
+        promptsTR.put("strengthTraining", "Güç Antrenmanı");
+        promptsTR.put("swimming", "Yüzme");
+        promptsTR.put("enterDistance", "Kilometre cinsinden mesafe girin:");
+        promptsTR.put("enterDuration", "Dakika cinsinden süre girin:");
         promptsTR.put("RunningSpeed", "Koşu Hızı:");
         promptsTR.put("Distance", "Mesafe:");
         promptsTR.put("Duration", "Süre:");
-        promptsTR.put("cyclingSpeed", "Bisiklet hızı:");
-        promptsTR.put("enterWeight", "Ağırlığı kilogram cinsinden girin:");
+        promptsTR.put("cyclingSpeed", "Bisiklet Hızı:");
+        promptsTR.put("enterWeight", "Kilogram cinsinden ağırlığı girin:");
         promptsTR.put("enterRepeats", "Tekrar sayısını girin:");
         promptsTR.put("enterPoolLength", "Havuz uzunluğunu metre cinsinden girin:");
-        promptsTR.put("invalidChoice", "Geçersiz etkinlik seçimi");
+        promptsTR.put("invalidChoice", "Geçersiz aktivite seçimi");
         promptsTR.put("continuePrompt", "Devam etmek istiyor musunuz? (evet/hayır):");
         promptsTR.put("yes", "evet");
         promptsTR.put("no", "hayır");
+        promptsTR.put("cycling_desc", "Yol parkurunda açık havada bisiklet sürmek.");
+        promptsTR.put("cycling_device", "Yol Bisikleti / Şehir Bisikleti");
         promptsTR.put("invalidInput", "Geçersiz giriş. Lütfen 'evet' veya 'hayır' girin.");
         promptsTR.put("invalidNumber", "Geçersiz giriş. Lütfen geçerli bir sayı girin.");
-        promptsTR.put("closing", "Kapatılıyor...");
+        promptsTR.put("closing", "Kapanıyor...");
         promptsTR.put("repeatZero", "Tekrar sıfır olamaz.");
         promptsTR.put("weightIs", "Ağırlık:");
         promptsTR.put("repeatIs", "Tekrar:");
         promptsTR.put("totalWorkload", "Toplam iş yükü:");
         promptsTR.put("TotalSwimmingDistance", "Toplam yüzme mesafesi:");
+
+        promptsTR.put("weight_history", "Ağırlık geçmişi: ");
+        promptsTR.put("bmi_history", "BMI geçmişi: ");
+        promptsTR.put("vo2_max_history", "VO2 max geçmişi: ");
+        promptsTR.put("your_history", "Geçmişin: ");
+        promptsTR.put("no_equipment", "Ekipmana ihtiyaç yok.");
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 
     public String getPrompt(String key) {

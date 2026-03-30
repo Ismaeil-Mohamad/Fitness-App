@@ -101,18 +101,26 @@ public abstract class Activities {
     @Override
     public String toString() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        StringBuilder sb = new StringBuilder();
 
-        return String.format(
-                "%s: %s\n%s: %s\n%s: %s\n%s: %.1f min\n%s: %d\n%s: %.1f km\n%s: %s\n%s: %.1f kg",
-                languageManager.getPrompt("activity"), type,
-                languageManager.getPrompt("description"), description,
-                languageManager.getPrompt("dateTime"), dateTime.format(formatter),
-                languageManager.getPrompt("duration"), duration,
-                languageManager.getPrompt("repetitions"), repeat,
-                languageManager.getPrompt("distance"), distance,
-                languageManager.getPrompt("device"), device,
-                languageManager.getPrompt("weight1"), strengthWeight
-        );
+        sb.append(String.format("%s : %s\n", languageManager.getPrompt("activity"), type));
+        if (description != null && !description.contains("not found")) {
+            sb.append(String.format("%s : %s\n", languageManager.getPrompt("description"), description));
+        }
+        sb.append(String.format("%s : %s\n", languageManager.getPrompt("dateTime"), dateTime.format(formatter)));
+        sb.append(String.format("%s : %.1f min\n", languageManager.getPrompt("duration"), duration));
+        if (distance > 0) {
+            sb.append(String.format("%s : %.1f km\n", languageManager.getPrompt("distance"), distance));
+        }
+        if (device != null && !device.contains("not found")) {
+            sb.append(String.format("%s : %s\n", languageManager.getPrompt("device"), device));
+        }
+        if (strengthWeight > 0) {
+            sb.append(String.format("%s : %.1f kg\n", languageManager.getPrompt("weight1"), strengthWeight));
+        }
+        if (repeat > 1) {
+            sb.append(String.format("%s : %d\n", languageManager.getPrompt("repetitions"), repeat));
+        }
+        return sb.toString();
     }
-
 }
