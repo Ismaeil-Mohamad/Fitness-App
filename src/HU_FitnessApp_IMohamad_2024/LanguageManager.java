@@ -61,7 +61,7 @@ public class LanguageManager {
         promptsEN.put("dataLoadSuccess", "User data loaded successfully.");
         promptsEN.put("dataLoadError", "Error loading user data:");
         promptsEN.put("enterCoachName", "Enter the coach's name:");
-        promptsEN.put("enterCoachSurname", "Enter the coach's last name");
+        promptsEN.put("enterCoachSurname", "Enter the coach's last name:");
         promptsEN.put("selectedCoach", "Name of selected coach:");
         promptsEN.put("ChooseACoach", "Choose a Coach:");
         promptsEN.put("chooseActivity", "Choose an activity:");
